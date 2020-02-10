@@ -247,7 +247,7 @@ totalMissingsValues</code></pre>
 <p>Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.</p>
 <pre class="r"><code>getMeanStepsPerInterval&lt;-function(interval){
     stepsPerInterval[stepsPerInterval$interval==interval,]$steps
-}</code></pre>
+} </code></pre>
 <p>Create a new dataset that is equal to the original dataset but with the missing data filled in.</p>
 <pre class="r"><code>activityWithNoNA&lt;-activity
 for(i in 1:nrow(activityWithNoNA)){

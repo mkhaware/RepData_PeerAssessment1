@@ -150,7 +150,7 @@ Devise a strategy for filling in all of the missing values in the dataset. The s
 ```r
 getMeanStepsPerInterval<-function(interval){
     stepsPerInterval[stepsPerInterval$interval==interval,]$steps
-}
+} 
 ```
 
 Create a new dataset that is equal to the original dataset but with the missing data filled in.
